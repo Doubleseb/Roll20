@@ -1,0 +1,499 @@
+.charsheet
+{
+    background-color: #fff;
+    /*overflow: hidden;*/
+    font-family: Papyrus, fantasy;
+   
+}
+
+.sheet-global {
+    margin: 0 auto; 
+    width:850px;
+    min-width:850px;
+    max-width:850px;
+    }
+
+	
+html { 
+     width:850px;
+    min-width:850px;
+    max-width:850px;
+    height: 100%;
+    }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 850px;
+    }
+
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    /*background: #f8f8f8;
+    color:#888;*/
+    border:none;
+    outline:none;
+    /*display: inline-block;*/
+    -webkit-appearance:none;
+    -moz-appearance:none;
+     width:130px;
+    appearance:none;
+    cursor:pointer;
+    vertical-align: middle;
+}
+
+
+.sheet-inputtest{
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    /*background: #f8f8f8;
+    color:#888;*/
+    border:none;
+    outline:none;
+    vertical-align: middle;
+    /*display: inline-block;*/
+    -webkit-appearance:none;
+    -moz-appearance:none;
+     width:130px;
+    appearance:none;
+    cursor:pointer;
+}
+
+h4
+{
+    font-weight: 400;
+    margin-left: 0;
+    text-align: Center;
+}
+
+h1,
+hr
+{
+    background-image:    url(http://i.imgur.com/T67Y0e5.jpg) ;
+    background-position: center top 100%;
+    background-repeat: no-repeat;
+    background-size:     auto 60px;
+    text-align: Left;
+    width: 100%;
+    font-size: 20px;
+}
+
+hr { height: 10px; }
+
+label {font-size: 12px;}
+
+h1 span
+{
+    color: #BE4136;
+    padding: 0 5px;
+    text-align: Center;
+}
+
+img { max-height: 100px; }
+
+.sheet-col .sheet-2colrow.sheet-sub2colrow { width: 841px; padding: 0 auto 0 auto;}
+
+.sheet-2colrow.sheet-span2 .sheet-col { width: 250px; }
+
+.sheet-2colrow.sheet-span2 .sheet-col .sheet-span-header:first-child { width: 200px; }
+
+.sheet-rolls { 
+    padding: 5px;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    }
+
+.sheet-skills input:not(.sheet-narrow),
+label input,
+label select
+{
+    -webkit-flex: 1 1 auto;
+    flex:         1 1 auto;
+}
+
+.sheet-dots { width: 185px; }
+
+.sheet-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align:center;
+    }
+
+.sheet-skills input,
+label span
+{
+    -webkit-flex: 0 1 auto;
+    flex:         0 1 auto;
+    margin-right: 20px;
+}
+
+label input[type=text],
+label:not(.sheet-dv) input[type=number],
+label select,
+.sheet-skills input,
+{
+    -moz-box-shadow:    none;
+    -webkit-box-shadow: none;
+    box-shadow:         none;
+
+    background: transparent;
+
+    border:        0;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+
+    vertical-align: baseline;
+}
+
+
+label input:focus,
+.sheet-skills input:focus,
+{
+    /*display: inline;*/
+    padding-right: 0;
+}
+
+input[type=radio].sheet-CheckHonneur ,
+input[type=checkbox].sheet-CheckHonneur
+{
+    cursor: pointer;
+
+    top:    5px;
+    left:   6px;
+    width:  16px;
+    height: 16px;
+
+    margin: -10px;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+input[type=radio] + span::before.sheet-CheckHonneur,
+input[type=checkbox] + span::before.sheet-CheckHonneur
+{
+    -moz-box-shadow:    0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow:         0 0 2px #ccc;
+
+    background: radial-gradient(#f6f6f6,#dfdfdf);
+    border: solid 1px #a8a8a8;
+    display: inline-block;
+    line-height: 14px;
+    margin-right: 4px;
+
+    text-align:     center;
+    vertical-align: middle;
+    /* border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: middle;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    
+    position: relative;
+    content: "";
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;*/
+}
+
+input[type=radio] + span::before .sheet-CheckHonneur
+{
+    -moz-border-radius:    50%;
+    -webkit-border-radius: 50%;
+    border-radius:         50%;
+
+    content:"•"; 
+    font-size: 20px;
+
+    width:  10px;
+    height: 10px;
+}
+
+input[type=checkbox] + span::before .sheet-CheckHonneur
+{
+    -moz-border-radius:    2.5px;
+    -webkit-border-radius: 2.5px;
+    border-radius:         2.5px;
+
+    content: "";
+    font-size: 10px;
+
+    width:  10px;
+    height: 10px;
+}
+
+.sheet-dots input[type=checkbox]:first-child + span::before { opacity: 0.3; }
+
+.sheet-dots input[type=checkbox]:first-child:checked + span::before
+{
+    -moz-box-shadow:    0 0 2px transparent;
+    -webkit-box-shadow: 0 0 2px transparent;
+    box-shadow:         0 0 2px transparent;
+
+    background: transparent;
+    border: solid 1px transparent;
+    color: #a00;
+    content: "?";
+}
+
+.sheet-dots input[type=checkbox]:first-child:hover:checked + span::before,
+{
+    -moz-box-shadow:    0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow:         0 0 2px #ccc;
+
+    border: solid 1px #a8a8a8;
+    margin-right: 4px;
+}
+
+.sheet-dots input[type=checkbox]:checked ~ input[type=radio] + span { opacity: 0.5; }
+
+/* style des onglets*/
+input.sheet-tab
+{
+    width:  100px;
+    height: 18px;
+    position:inherit;
+}
+
+input.sheet-tab:first-of-type { margin-left: 5px; }
+
+input.sheet-tab:first-of-type + span::before { margin-left: -85px; }
+
+input.sheet-tab + span::before,
+input.sheet-tab:checked ~ input.sheet-tab + span::before
+{
+    -moz-border-radius:    3px;
+    -webkit-border-radius: 3px;
+    border-radius:         3px;
+
+    background-color: #DDC69A;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#DDC69A), to(#745035 ));
+    background-image: -webkit-linear-gradient(top, #DDC69A, #745035 );
+    background-image: -moz-linear-gradient(top, #DDC69A, #745035 );
+    background-image: -ms-linear-gradient(top, #DDC69A, #745035 );
+    background-image: -o-linear-gradient(top, #DDC69A, #745035 );
+    background-image: linear-gradient(to bottom, #DDC69A, #745035 );
+    filter:           progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#DDC69A, endColorstr=#745035 );
+
+    color: #f8f8f8;
+    content: attr(title);
+
+    font-size:   14px;
+    font-weight: 700;
+
+    width:  100px;
+    height: 18px;
+
+    margin-left:  -90px;
+    margin-right: 10px;
+    padding-top:  2px;
+
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
+}
+
+input.sheet-tab:checked + span::before
+{
+    background-color: #62442d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#62442d), to(#d7bb87));
+    background-image: -webkit-linear-gradient(top, #62442d, #d7bb87);
+    background-image: -moz-linear-gradient(top, #62442d, #d7bb87);
+    background-image: -ms-linear-gradient(top, #62442d, #d7bb87);
+    background-image: -o-linear-gradient(top, #62442d, #d7bb87);
+    background-image: linear-gradient(to bottom, #62442d, #d7bb87);
+    filter:           progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#62442d, endColorstr=#d7bb87);
+
+    border: 1px solid #6a7000;
+}
+.sheet-tab-content { display: none; }
+/*.sheet-6colrow .sheet-col { Height: 500 px;}*/
+
+/*-------------------------------------Section des traits------------------------------------------------*/
+.sheet-ring {
+ border-radius: 10px;
+ width = 15%;
+ height:280px;
+ }
+ 
+.sheet-vide {
+    background-image:linear-gradient(60deg, #BDA7A8, #7B5959);
+    }
+.sheet-terre {
+    background-image:linear-gradient(60deg, #B39C85, #32180C);
+    }
+.sheet-feu {
+    background-image:linear-gradient(60deg, #EBA93C, #bd3504);
+    }
+.sheet-air {
+    background-image:linear-gradient(60deg, #B4C8DB, #62819A);
+    }
+.sheet-eau {
+    background-image:linear-gradient(60deg, #98ADDA, #172E8C);
+    }
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------Zone honneur, souillure, etc ----------------------------------*/
+.sheet-honneur {
+    background: #EDEDED;
+    width:20%;
+    height:280px;
+    border-radius: 10px;
+    border:2px groove black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+/*--------------------------------------------------------------------------------------------------------*/
+
+/* RADIO  */
+.charsheet input[type="radio"].sheet-falseRadio
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 65px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 9999;
+}
+.charsheet span.sheet-falseRadio {
+    position: relative;
+    top: -10px;
+    left: 0px;
+    text-align: center;
+    display: inline-block;
+    margin-left, margin-right: 2px;
+    padding-left, padding-right: 3px;
+    width: 65px;
+    cursor: pointer;
+    border: none;
+    color: #000000;
+    background: transparent;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: normal;
+}
+.charsheet input.sheet-falseRadio:checked + span.sheet-falseRadio
+{
+    font-weight: bold;
+    color: #000077;
+}
+.charsheet input.sheet-falseRadio:checked + span.sheet-falseRadio::after
+{
+    content: '?';
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+.sheet-center,
+h4,
+input[type=number] { 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  /*width: ...;*/
+}
+
+button[type=roll].sheet-blank-roll-button::before,
+input[type=radio]:not(.sheet-tab):checked ~ input[type=radio] + span::before,
+.sheet-dots input[type=checkbox]:checked ~ input[type=radio] + span::before { content: ""; }
+
+.repcontrol,
+.sheet-familiar-attacks > tbody > tr:not(:first-child) > td > input { margin-top: 5px; }
+
+.sheet-tab[value=traits]:checked ~ .sheet-traits-tab,
+.sheet-tab[value=skills]:checked ~ .sheet-skills-tab,
+.sheet-tab[value=background]:checked ~ .sheet-background-tab,
+.sheet-tab[value=spells]:checked ~ .sheet-spells-tab { display: block; }
+
+div.sheet-ability > input[type=checkbox]:first-child + span::before,
+.sheet-dots input[type=checkbox]:first-child:hover + span::before,
+.sheet-dots input[type=checkbox]:first-child:checked + span::before { opacity: 1; }
+
+
+/* Roll Template */
+.sheet-rolltemplate-L5r table {
+    width: 189px;
+    height: 189px;
+    padding: 2px;
+    background: url(http://imgur.com/rsKbakv.jpg) top left;
+    background-size: 189px 189px;
+    background-repeat: no-repeat;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-L5r th {
+    color: rgb(112, 0, 0);
+    padding: 15px 2px 2px 20px;
+    line-height: 1.2em;
+	font-size: 1.2em;
+    text-align: left;
+}
+ 
+ 
+.sheet-rolltemplate-L5r td {
+    padding-left: 20px;
+    font-size: 1.0em;
+    vertical-align: top;
+}
+ 
+.sheet-rolltemplate-L5r .sheet-result {
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(112, 0, 0);
+    padding-bottom: 20px;
+}
+ 
+.sheet-rolltemplate-L5r .inlinerollresult  {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-L5r .inlinerollresult.fullcrit {
+	color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-L5r .inlinerollresult.fullfail {
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-L5r .inlinerollresult.importantroll {
+	color: #3FB315;
+    border: none;
+}
+/* fin du roll template */
